@@ -685,6 +685,10 @@
                                 </excludes>
                             </artifactSet>
                             <relocations>
+																<relocation>
+                                    <pattern>org.apache.hadoop.hive.ql.exec.FunctionRegistry</pattern>
+                                    <shadedPattern>${shadeBase}.org.apache.hadoop.hive.ql.exec.FunctionRegistry</shadedPattern>
+                                </relocation>
                                 <relocation>
                                     <pattern>com.google.protobuf</pattern>
                                     <shadedPattern>${shadeBase}.com.google.protobuf</shadedPattern>
